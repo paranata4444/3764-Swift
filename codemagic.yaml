@@ -4,16 +4,16 @@ workflows:
     max_build_duration: 120
     instance_type: mac_mini_m1
     integrations:
-      app_store_connect: roadofspeed #назва ключа з код меджека, щось схоже на нейм апки
+      app_store_connect: birdspen #назва ключа з код меджека, щось схоже на нейм апки
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.lavrykproj.app #тут бандл
+        bundle_identifier: com.paramonenkoproj.app #тут бандл
       vars:
         BUNDLE_ID: "com.lavrykproj.app" #тут бандл
-        XCODE_WORKSPACE: "RoadsOfSpeed.xcworkspace" # <-- Put the name of your Xcode workspace here
-        XCODE_SCHEME: "RoadsOfSpeed" # <-- Put the name of your Xcode scheme here
-        APP_STORE_APPLE_ID: 6755600019 #тут ід додатка в стор
+        XCODE_WORKSPACE: "BirdsPen.xcworkspace" # <-- Put the name of your Xcode workspace here
+        XCODE_SCHEME: "BirdsPen" # <-- Put the name of your Xcode scheme here
+        APP_STORE_APPLE_ID: 6755719431 #тут ід додатка в стор
       xcode: latest
       cocoapods: default
     scripts:
